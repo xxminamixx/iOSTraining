@@ -7,11 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MixiSampleViewController.h"
 
 @interface MixiSampleViewController : UIViewController
 
+@property  MixiSampleViewController *sampleVC;
 @property (weak, nonatomic) IBOutlet UIView *pinkOver; // UIView
 @property (weak, nonatomic) IBOutlet UIView *pinkUnder; // UIView
 @property (weak, nonatomic) IBOutlet UIView *yellowUnder; // UIView
 
+
+- (IBAction)showView:(UIButton *)sender;
+
+- (IBAction)hideView:(UIButton *)sender;
 @end

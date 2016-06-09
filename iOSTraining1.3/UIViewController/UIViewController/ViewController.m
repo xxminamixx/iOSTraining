@@ -31,14 +31,4 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-- (IBAction)createView:(UIButton *)sender {
-    [self.view addSubview:sampleVC.view];
-
-}
-
-- (IBAction)deleteButton:(id)sender {
-    [self.view addSubview:sampleVC.view];
-
-}
 @end

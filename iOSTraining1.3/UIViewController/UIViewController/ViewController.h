@@ -8,11 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface ViewController : UIViewController
-
-
-- (IBAction)createView:(UIButton *)sender;
-- (IBAction)deleteButton:(id)sender;
 
 @end
 
