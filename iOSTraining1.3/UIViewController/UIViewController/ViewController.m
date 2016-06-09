@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MixiSampleViewController.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    MixiSampleViewController *sampleVC = [[MixiSampleViewController alloc] initWithNibName:@"MixiSampleViewController" bundle:nil];
+    
+    [self.view addSubview:sampleVC.view];
+   // [sampleVC.pinkOver setBackgroundColor:[UIColor redColor]];
+
     // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 - (void)didReceiveMemoryWarning {

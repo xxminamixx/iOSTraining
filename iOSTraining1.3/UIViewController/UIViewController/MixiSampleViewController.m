@@ -14,11 +14,14 @@
 
 @implementation MixiSampleViewController
 
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    MixiSampleViewController *sampleVC = [[MixiSampleViewController alloc] initWithNibName:@"MixiSampleViewController" bundle:nil];
     // Do any additional setup after loading the view from its nib.
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -35,4 +38,13 @@
 }
 */
 
+
+- (IBAction)deleteView:(id)sender {
+    //[self.view addSubview:sender.view];
+
+   }
+- (IBAction)createView:(UIButton *)sender {
+    //[self.view addSubview:_sampleVC.view];
+
+}
 @end
