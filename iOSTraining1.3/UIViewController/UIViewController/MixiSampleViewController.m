@@ -40,12 +40,12 @@
 
 
 - (IBAction)deleteView:(id)sender {
-    [self.view addSubview:_sampleVC.view];
+   // [self.view addSubview:_sampleVC.view];
 
    }
 
 - (IBAction)createView:(UIButton *)sender {
-    [self.view addSubview:_sampleVC.view];
+   // [self.view addSubview:_sampleVC.view];
 
 }
 @end
