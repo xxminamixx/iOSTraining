@@ -9,8 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface MixiSampleViewController : UIViewController
+                
+@property (weak, nonatomic) IBOutlet UILabel *labels;
+@property (weak, nonatomic) IBOutlet UISlider *slider;
 
-@property (nonatomic, strong) IBOutlet UILabel *label;
-
+- (IBAction)button:(id)sender;
+- (IBAction)action1:(id)sender;
+- (IBAction)action2:(id)sender;
+- (IBAction)action3:(id)sender;
 
 @end

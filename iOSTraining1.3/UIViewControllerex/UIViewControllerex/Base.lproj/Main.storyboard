@@ -22,10 +22,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--View Controller-->
+        <!--MixiSampleViewController-->
         <scene sceneID="Bzt-fc-mqa">
             <objects>
-                <viewController id="LS0-3O-0Xg" sceneMemberID="viewController">
+                <viewController id="LS0-3O-0Xg" userLabel="MixiSampleViewController" customClass="MixiSampleViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rY3-t3-Pee"/>
                         <viewControllerLayoutGuide type="bottom" id="XEi-4c-omz"/>
@@ -39,19 +39,32 @@
                             </slider>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mQG-s5-E7P">
                                 <rect key="frame" x="82" y="192" width="51" height="31"/>
+                                <connections>
+                                    <action selector="action1:" destination="LS0-3O-0Xg" eventType="valueChanged" id="SBS-FS-dPh"/>
+                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dkX-gB-NlY">
                                 <rect key="frame" x="178" y="193" width="51" height="31"/>
+                                <connections>
+                                    <action selector="action2:" destination="LS0-3O-0Xg" eventType="valueChanged" id="Iap-eo-CNg"/>
+                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QrT-qh-SVj">
                                 <rect key="frame" x="276" y="193" width="51" height="31"/>
+                                <connections>
+                                    <action selector="action3:" destination="LS0-3O-0Xg" eventType="valueChanged" id="FgC-SR-0SX"/>
+                                </connections>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bP-hV-D8d">
                                 <rect key="frame" x="82" y="98" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="button:" destination="LS0-3O-0Xg" eventType="touchUpInside" id="bOv-ht-fh8"/>
+                                    <action selector="buttonTapped:" destination="LS0-3O-0Xg" eventType="touchUpInside" id="Ihi-zq-jSD"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZy-V2-H5Z">
-                                <rect key="frame" x="82" y="81" width="42" height="21"/>
+                                <rect key="frame" x="82" y="81" width="99" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -59,6 +72,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="labels" destination="dZy-V2-H5Z" id="uJE-kb-QPu"/>
+                        <outlet property="slider" destination="EoM-qY-YeQ" id="2pG-FA-QUk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QtJ-yZ-DFa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
