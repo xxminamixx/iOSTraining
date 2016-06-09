@@ -11,5 +11,8 @@
 @interface ViewController : UIViewController
 
 
+- (IBAction)createView:(UIButton *)sender;
+- (IBAction)deleteButton:(id)sender;
+
 @end
 
