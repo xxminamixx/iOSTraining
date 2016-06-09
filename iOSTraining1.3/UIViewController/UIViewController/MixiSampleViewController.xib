@@ -7,7 +7,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MixiSampleViewController">
             <connections>
-                <outlet property="deleteView" destination="HlN-Km-zth" id="Zf5-J2-7M2"/>
                 <outlet property="pinkOver" destination="g0B-Pv-rES" id="ipI-vN-d12"/>
                 <outlet property="pinkUnder" destination="wsj-Dg-lyP" id="Vub-Rs-Ie0"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
