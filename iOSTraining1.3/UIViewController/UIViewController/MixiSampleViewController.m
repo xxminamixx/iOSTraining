@@ -25,7 +25,11 @@
     
     
     [_pinkOver setBackgroundColor:[UIColor redColor]];//色の操作
-    // Do any additional setup after loading the view from its nib.
+    [_pinkOver setFrame:CGRectMake(_pinkOver.frame.origin.x,
+                                   _pinkOver.frame.origin.y,
+                                   _pinkOver.frame.size.width/2,
+                                   _pinkOver.frame.size.height/2)];
+    
 }
 
 
