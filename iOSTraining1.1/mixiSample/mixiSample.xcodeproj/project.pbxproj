@@ -15,6 +15,7 @@
 		E9E9937A1D08FB61006EF2C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E993781D08FB61006EF2C7 /* LaunchScreen.storyboard */; };
 		E9E993851D08FB61006EF2C7 /* mixiSampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E993841D08FB61006EF2C7 /* mixiSampleUITests.m */; };
 		E9E993911D08FB83006EF2C7 /* MixiSampleClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E993901D08FB83006EF2C7 /* MixiSampleClass.m */; };
+		E9E993941D08FD8F006EF2C7 /* NSString+HogeAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E993931D08FD8F006EF2C7 /* NSString+HogeAddition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		E9E993861D08FB61006EF2C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9E9938F1D08FB83006EF2C7 /* MixiSampleClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiSampleClass.h; sourceTree = "<group>"; };
 		E9E993901D08FB83006EF2C7 /* MixiSampleClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiSampleClass.m; sourceTree = "<group>"; };
+		E9E993921D08FD8F006EF2C7 /* NSString+HogeAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HogeAddition.h"; sourceTree = "<group>"; };
+		E9E993931D08FD8F006EF2C7 /* NSString+HogeAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HogeAddition.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,8 @@
 				E9E9936A1D08FB61006EF2C7 /* Supporting Files */,
 				E9E9938F1D08FB83006EF2C7 /* MixiSampleClass.h */,
 				E9E993901D08FB83006EF2C7 /* MixiSampleClass.m */,
+				E9E993921D08FD8F006EF2C7 /* NSString+HogeAddition.h */,
+				E9E993931D08FD8F006EF2C7 /* NSString+HogeAddition.m */,
 			);
 			path = mixiSample;
 			sourceTree = "<group>";
@@ -217,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9E993721D08FB61006EF2C7 /* ViewController.m in Sources */,
+				E9E993941D08FD8F006EF2C7 /* NSString+HogeAddition.m in Sources */,
 				E9E9936F1D08FB61006EF2C7 /* AppDelegate.m in Sources */,
 				E9E9936C1D08FB61006EF2C7 /* main.m in Sources */,
 				E9E993911D08FB83006EF2C7 /* MixiSampleClass.m in Sources */,
