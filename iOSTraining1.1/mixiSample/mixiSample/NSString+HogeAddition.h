@@ -10,4 +10,6 @@
 
 @interface NSString (HogeAddition)
 
+-(NSString *)addHoge;
+
 @end

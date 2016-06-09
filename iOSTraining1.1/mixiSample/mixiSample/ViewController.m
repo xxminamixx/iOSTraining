@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "MixiSampleClass.h"
+#import "NSString+HogeAddition.h"
 
 @interface ViewController ()
 
@@ -20,6 +21,8 @@
     MixiSampleClass *sample = [MixiSampleClass new];
     sample.name = @"minami";
     NSLog(@"name is %@", sample.name);
+    
+    [[sample name] addHoge];
 }
 
 - (void)didReceiveMemoryWarning {

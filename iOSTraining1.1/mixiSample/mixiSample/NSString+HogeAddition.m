@@ -10,4 +10,9 @@
 
 @implementation NSString (HogeAddition)
 
+-(NSString *)addHoge
+{
+    return [NSString stringWithFormat:@"%@hoge", self];
+}
+
 @end
