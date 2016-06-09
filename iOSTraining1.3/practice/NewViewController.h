@@ -10,7 +10,8 @@
 
 @interface NewViewController : UIViewController
 
-@property (strong, nonatomic) IBOutlet UILabel *label;
+@property (weak, nonatomic) IBOutlet UILabel *label;
+
 
 - (IBAction)buttonAction:(id)sender;
 @end
