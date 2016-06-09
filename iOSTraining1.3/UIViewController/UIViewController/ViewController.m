@@ -17,12 +17,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    MixiSampleViewController *sampleVC = [[MixiSampleViewController alloc] initWithNibName:@"MixiSampleViewController" bundle:nil];
+    _sampleVC = [[MixiSampleViewController alloc] initWithNibName:@"MixiSampleViewController" bundle:nil];
     
-    [self.view addSubview:sampleVC.view];
-   // [sampleVC.pinkOver setBackgroundColor:[UIColor redColor]];
-
-    // Do any additional setup after loading the view, typically from a nib.
+    [self.view addSubview:_sampleVC.view];
+    
+    //独自に追加
+    [self.view addSubview: _showButton];
+    [self.view addSubview: _hideButton];
     
 }
 
@@ -31,4 +32,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)showView:(id)sender {
+    
+    [self.view addSubview:_sampleVC.view];
+    [self.view addSubview: _showButton];
+    [self.view addSubview: _hideButton];
+}
+
+- (IBAction)hideView:(id)sender {
+    [_sampleVC.view removeFromSuperview];
+}
 @end

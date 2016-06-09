@@ -7,9 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MixiSampleViewController.h"
 
 
 @interface ViewController : UIViewController
+
+@property  MixiSampleViewController *sampleVC;
+@property (weak, nonatomic) IBOutlet UIButton *showButton;
+@property (weak, nonatomic) IBOutlet UIButton *hideButton;
+
+- (IBAction)showView:(id)sender;
+- (IBAction)hideView:(id)sender;
 
 @end
 

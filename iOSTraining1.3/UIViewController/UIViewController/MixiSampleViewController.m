@@ -23,6 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
     [_pinkOver setBackgroundColor:[UIColor redColor]];//色の操作
     // Do any additional setup after loading the view from its nib.
 }
@@ -43,15 +44,4 @@
 }
 */
 
-
-
-- (IBAction)showView:(UIButton *)sender {
-    NSLog(@"showview inner");
-    [self.view addSubview:_sampleVC.view];
-}
-
-- (IBAction)hideView:(UIButton *)sender {
-    NSLog(@"hideview inner");
-    [_sampleVC.view removeFromSuperview];
-}
 @end
