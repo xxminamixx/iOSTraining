@@ -14,6 +14,7 @@
 		E98411B31D0A8BDD00D4F085 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E98411B21D0A8BDD00D4F085 /* Assets.xcassets */; };
 		E98411B61D0A8BDD00D4F085 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E98411B41D0A8BDD00D4F085 /* LaunchScreen.storyboard */; };
 		E98411C11D0A8BDD00D4F085 /* imageTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E98411C01D0A8BDD00D4F085 /* imageTestUITests.m */; };
+		E98411CC1D0A8C5300D4F085 /* big_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E98411CB1D0A8C5300D4F085 /* big_image.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		E98411BC1D0A8BDD00D4F085 /* imageTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = imageTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E98411C01D0A8BDD00D4F085 /* imageTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = imageTestUITests.m; sourceTree = "<group>"; };
 		E98411C21D0A8BDD00D4F085 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E98411CB1D0A8C5300D4F085 /* big_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = big_image.jpg; path = ../../../../../Downloads/big_image.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			children = (
 				E98411A91D0A8BDD00D4F085 /* AppDelegate.h */,
 				E98411AA1D0A8BDD00D4F085 /* AppDelegate.m */,
+				E98411CB1D0A8C5300D4F085 /* big_image.jpg */,
 				E98411AC1D0A8BDD00D4F085 /* ViewController.h */,
 				E98411AD1D0A8BDD00D4F085 /* ViewController.m */,
 				E98411AF1D0A8BDD00D4F085 /* Main.storyboard */,
@@ -191,6 +194,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E98411CC1D0A8C5300D4F085 /* big_image.jpg in Resources */,
 				E98411B61D0A8BDD00D4F085 /* LaunchScreen.storyboard in Resources */,
 				E98411B31D0A8BDD00D4F085 /* Assets.xcassets in Resources */,
 				E98411B11D0A8BDD00D4F085 /* Main.storyboard in Resources */,

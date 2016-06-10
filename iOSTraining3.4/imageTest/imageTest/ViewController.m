@@ -16,7 +16,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    //画面をはみ出たコンテンツにはUIScrollViewを利用する
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:self.view.frame];
+    [self.view addSubview:scrollView];
+    
+    UIImage *image = [UIImage imageNamed:@"big_image.jpg"];
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, image.size.width, image.size.height)];
+    imageView.image = image;
+    
+    [scrollView addSubview:imageView];
+    
+    //スクロール
+    scrollView.contentSize = imageView.frame.size;
+    
+    scrollView.maximumZoomScale = 3.0; // 最大倍率
+    scrollView.minimumZoomScale = 0.5; // 最小倍率
 }
 
 - (void)didReceiveMemoryWarning {
