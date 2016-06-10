@@ -7,15 +7,23 @@
 //
 
 #import "ViewController.h"
+#import "TableViewCell.h"
 
 @interface ViewController ()
-
+@property TableViewCell *tablecell;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    _tablecell = [[TableViewCell alloc] initWithNibName:@"TableViewCell" bundle:nil];
+    
+    [self.view addSubview:_tablecell.view];
+    
+    
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
