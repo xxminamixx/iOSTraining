@@ -23,13 +23,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
+    /*
     [_pinkOver setBackgroundColor:[UIColor redColor]];//色の操作
     [_pinkOver setFrame:CGRectMake(_pinkOver.frame.origin.x,
                                    _pinkOver.frame.origin.y,
                                    _pinkOver.frame.size.width/2,
                                    _pinkOver.frame.size.height/2)];
-    
+    */
 }
 
 
