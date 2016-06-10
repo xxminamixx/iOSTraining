@@ -73,10 +73,47 @@
     //keyを削除
     [mdic removeObjectForKey:@"key"];
     
-    //nilを代入するとクラッシュ
-    //mdic[@"nil"] = nil;
+    // nilを代入するとクラッシュ
+    // mdic[@"nil"] = nil;
     
+    /*--*/
     
+    NSNumber *number = @1;
+    
+    // 直接intなどを代入できないが、NSNumberでラップしたら使える
+    NSArray *array = @[number, @2];
+    
+    // YES, NO などもキャスト可能
+    NSNumber *num = @YES;
+    
+    // int型へ変換
+    int a = [number intValue];
+    
+    /*--*/
+    
+    /*
+    id obj = nil;
+    if(obj) { // always fales
+        // do not come here
+    } else {
+        // come here
+    }
+    
+    // [obj method]; // クラッシュはしませんが、何も起きません
+    */
+    
+    NSArray *entry1 = [NSArray new];
+    entry1 = @[@"list_voice.pl", @"list_diary.pl", @"list_mymall_item.pl"];
+    
+    NSMutableDictionary *query = [NSMutableDictionary new];
+    query[@"tag_id"] = @7;
+    
+    NSDictionary *dict = @{
+                           @"mixi.jp" : entry1,
+                           @"mmall.jp" : query
+                           };
+    
+    NSLog(@"%@", dict);
     
     
     
