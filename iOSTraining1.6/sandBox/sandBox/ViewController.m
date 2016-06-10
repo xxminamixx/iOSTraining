@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TestQueue.h"
 
 @interface ViewController ()
 
@@ -102,6 +103,9 @@
     // [obj method]; // クラッシュはしませんが、何も起きません
     */
     
+    
+    
+    //課題1
     NSArray *entry1 = [NSArray new];
     entry1 = @[@"list_voice.pl", @"list_diary.pl", @"list_mymall_item.pl"];
     
@@ -114,6 +118,18 @@
                            };
     
     NSLog(@"%@", dict);
+    
+    //課題2
+    TestQueue *queue = [TestQueue new];
+    NSString *first = @"first";
+    NSString *second = @"second";
+    
+    [queue push: first];
+    [queue push: second];
+    
+    
+    NSLog(@"%lu", [queue size]);
+    
     
     
     

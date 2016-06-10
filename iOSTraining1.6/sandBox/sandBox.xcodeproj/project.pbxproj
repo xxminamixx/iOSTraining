@@ -14,6 +14,7 @@
 		E9D5D9431D0A40500038EAF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9D5D9421D0A40500038EAF4 /* Assets.xcassets */; };
 		E9D5D9461D0A40500038EAF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9D5D9441D0A40500038EAF4 /* LaunchScreen.storyboard */; };
 		E9D5D9511D0A40500038EAF4 /* sandBoxUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D5D9501D0A40500038EAF4 /* sandBoxUITests.m */; };
+		E9D5D95D1D0A4BFA0038EAF4 /* TestQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D5D95C1D0A4BFA0038EAF4 /* TestQueue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		E9D5D94C1D0A40500038EAF4 /* sandBoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sandBoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9D5D9501D0A40500038EAF4 /* sandBoxUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sandBoxUITests.m; sourceTree = "<group>"; };
 		E9D5D9521D0A40500038EAF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9D5D95B1D0A4BFA0038EAF4 /* TestQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestQueue.h; sourceTree = "<group>"; };
+		E9D5D95C1D0A4BFA0038EAF4 /* TestQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestQueue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				E9D5D93A1D0A40500038EAF4 /* AppDelegate.m */,
 				E9D5D93C1D0A40500038EAF4 /* ViewController.h */,
 				E9D5D93D1D0A40500038EAF4 /* ViewController.m */,
+				E9D5D95B1D0A4BFA0038EAF4 /* TestQueue.h */,
+				E9D5D95C1D0A4BFA0038EAF4 /* TestQueue.m */,
 				E9D5D93F1D0A40500038EAF4 /* Main.storyboard */,
 				E9D5D9421D0A40500038EAF4 /* Assets.xcassets */,
 				E9D5D9441D0A40500038EAF4 /* LaunchScreen.storyboard */,
@@ -214,6 +219,7 @@
 				E9D5D93E1D0A40500038EAF4 /* ViewController.m in Sources */,
 				E9D5D93B1D0A40500038EAF4 /* AppDelegate.m in Sources */,
 				E9D5D9381D0A40500038EAF4 /* main.m in Sources */,
+				E9D5D95D1D0A4BFA0038EAF4 /* TestQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
