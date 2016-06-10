@@ -1,13 +1,12 @@
 //
 //  AppDelegate.m
-//  tableView
+//  table
 //
 //  Created by Minami Kyohei on 2016/06/10.
 //  Copyright © 2016年 Minami Kyohei. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "TableViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,10 +16,6 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    
-    return YES;
-
     // Override point for customization after application launch.
     return YES;
 }

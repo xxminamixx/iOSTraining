@@ -1,6 +1,6 @@
 //
-//  tableViewUITests.m
-//  tableViewUITests
+//  tableUITests.m
+//  tableUITests
 //
 //  Created by Minami Kyohei on 2016/06/10.
 //  Copyright © 2016年 Minami Kyohei. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface tableViewUITests : XCTestCase
+@interface tableUITests : XCTestCase
 
 @end
 
-@implementation tableViewUITests
+@implementation tableUITests
 
 - (void)setUp {
     [super setUp];
