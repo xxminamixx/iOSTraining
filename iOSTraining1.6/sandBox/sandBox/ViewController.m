@@ -16,7 +16,75 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    // logの出力
     NSLog(@"Hello World");
+    
+    //NSArray
+    NSArray *ary = [NSArray new];
+    ary = @[@"Apple", @"Orange", @"Grape"];
+    
+    //高速列挙
+    for (NSArray *d in ary) {
+        NSLog(@"%@",d);
+    }
+    
+    //代入は不可
+    // ary[0] = @"りんご";
+    
+    /*--*/
+    
+    //NSMutableArray
+    NSMutableArray *mary = [NSMutableArray new];
+    
+    //MSMutableArrayに格納するNSString
+    NSString *str1 = @"first";
+    NSString *str2 = @"second";
+    
+    //格納
+    [mary addObject:str1];
+    [mary addObject:str2];
+    
+    //index0を削除
+    [mary removeObjectAtIndex:0];
+    
+    //高速列挙
+    for (NSArray *d in mary) {
+        NSLog(@"%@",d);
+    }
+    
+    /*--*/
+    
+    //NSDictionary
+    NSDictionary *dic = @{@"score": @100, @"time" : @60};
+   
+    //score = 100
+    id obj = dic[@"score"];
+    NSLog(@"%@", obj);
+    
+    //代入は不可
+    
+    //NSMutableDictionary
+    NSMutableDictionary *mdic = [NSMutableDictionary new];
+   
+    //keyという文字列をキーとしてvalueを代入
+    mdic[@"key"] = @"value";
+    
+    //keyを削除
+    [mdic removeObjectForKey:@"key"];
+    
+    //nilを代入するとクラッシュ
+    //mdic[@"nil"] = nil;
+    
+    
+    
+    
+    
+    
+                      
+    
+    
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
