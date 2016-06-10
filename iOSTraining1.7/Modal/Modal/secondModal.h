@@ -1,0 +1,14 @@
+//
+//  secondModal.h
+//  Modal
+//
+//  Created by Minami Kyohei on 2016/06/10.
+//  Copyright © 2016年 Minami Kyohei. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface secondModal : UIViewController
+
+- (IBAction)secondModal:(id)sender;
+@end
