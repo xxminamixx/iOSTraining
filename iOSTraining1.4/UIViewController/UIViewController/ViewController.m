@@ -30,10 +30,10 @@
     MixiSampleViewController *postViewController = [MixiSampleViewController new];
     
     typedef enum {
-        UIModalTransitionStyleCoverVertical = 0,
-        UIModalTransitionStyleFlipHorizontal,
-        UIModalTransitionStyleCrossDissolve,
-        UIModalTransitionStylePartialCurl,
+        CoverVertical = 0,
+        FlipHorizontal,
+        CrossDissolve,
+        PartialCurl,
     } UIModalTransitionStyle;
     
     [self presentViewController:postViewController animated:YES completion:nil];
