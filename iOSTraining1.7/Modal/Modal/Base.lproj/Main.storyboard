@@ -14,11 +14,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3pZ-nw-A7F">
-                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <rect key="frame" x="184" y="353" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="firstModal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eTn-1G-9gd"/>
@@ -28,6 +28,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -41,28 +42,29 @@
                         <viewControllerLayoutGuide type="bottom" id="Wb1-LE-rn2"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3je-1R-L5F">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mVh-kU-9R6">
-                                <rect key="frame" x="0.0" y="391" width="600" height="209"/>
-                                <color key="backgroundColor" red="1" green="0.98547916307440941" blue="0.66915356722058439" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tJ3-mF-DJq">
-                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <rect key="frame" x="184" y="353" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="secondModal:" destination="e3C-HK-Za6" eventType="touchUpInside" id="Avg-EN-pyN"/>
                                     <segue destination="20r-9p-5Lq" kind="modal" id="P1k-S6-xLo"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mVh-kU-9R6">
+                                <rect key="frame" x="0.0" y="527" width="600" height="209"/>
+                                <color key="backgroundColor" red="1" green="0.98547916307440941" blue="0.66915356722058439" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PSo-JK-qG0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="340" y="1100"/>
+            <point key="canvasLocation" x="340" y="1228"/>
         </scene>
         <!--Third Modal-->
         <scene sceneID="au2-x8-5Mb">
@@ -73,17 +75,17 @@
                         <viewControllerLayoutGuide type="bottom" id="94m-EL-QRj"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="MCp-kh-5vs">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wbb-xy-7r1">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5s-0J-TjG">
-                                        <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                        <rect key="frame" x="184" y="421" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
-                                            <segue destination="e3C-HK-Za6" kind="modal" id="4L5-1x-RzK"/>
+                                            <segue destination="BYZ-38-t0r" kind="modal" id="GyB-iS-csK"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -95,10 +97,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I2M-gV-lUG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="342" y="1756"/>
+            <point key="canvasLocation" x="340" y="2278"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="4L5-1x-RzK"/>
-    </inferredMetricsTieBreakers>
 </document>
