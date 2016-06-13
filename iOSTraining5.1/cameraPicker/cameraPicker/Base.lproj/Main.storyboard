@@ -6,6 +6,24 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="k7P-JI-wXp">
+            <objects>
+                <viewController id="WKv-XY-Y6C" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="48R-fH-f4a"/>
+                        <viewControllerLayoutGuide type="bottom" id="dBb-AF-kgX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ACp-9i-LzW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="loX-7K-lFc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="153" y="-41"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
