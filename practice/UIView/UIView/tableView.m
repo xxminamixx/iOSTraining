@@ -8,7 +8,17 @@
 
 #import "tableView.h"
 
+// Delegate用のプロトコルを宣言 @property id <ここに対応> delegate;
+@protocol TableView <NSObject>
+
+- (void)copyText:(NSString *) label;
+@end
+
 @interface tableView ()
+//- (IBAction)addText:(id)sender;
+//- (IBAction)removeText:(id)sender;
+@property (weak, nonatomic) id <TableView> delegate;
+@property (weak, nonatomic) IBOutlet UITextField *text;
 
 @end
 
@@ -33,5 +43,15 @@
     // Pass the selected object to the new view controller.
 }
 */
+/*
+- (IBAction)addText:(id)sender {
+    //[self.delegate copyText:_text.text];
+}
+
+
+- (IBAction)removeText:(id)sender {
+    
+}
+ */
 
 @end

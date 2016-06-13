@@ -19,6 +19,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    
+    //xibをstoryboardに追加する
+    //調査した中で一番簡潔であった
+    
     UINib *nib = [UINib nibWithNibName:@"tableView" bundle:nil];
     [nib instantiateWithOwner:self options:nil];
     
@@ -29,4 +33,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+/*
+- (void)copyText:(NSString*) label
+{
+    NSLog(@"%@", label);
+}
+*/
+ 
 @end
