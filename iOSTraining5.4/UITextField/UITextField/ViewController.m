@@ -23,9 +23,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // textFieldはUITextField型の変数
     
-     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
+    //@selectorによりキーボードが出現したときにdelegateメソッドが呼ばれる
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
     
     
     
@@ -37,6 +37,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+//デリゲードメソッド
 #pragma mark - keyboardNotification
 -(void)keyboardWillShow:(NSNotification *)notification
 {
