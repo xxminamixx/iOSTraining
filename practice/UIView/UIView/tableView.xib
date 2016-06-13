@@ -7,7 +7,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="tableView">
             <connections>
-                <outlet property="text" destination="i3L-XA-f9Z" id="oye-Ci-LXV"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -22,22 +21,15 @@
                     <color key="sectionIndexBackgroundColor" red="0.54407354797979801" green="0.54407354797979801" blue="0.54407354797979801" alpha="1" colorSpace="calibratedRGB"/>
                 </tableView>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i3L-XA-f9Z">
-                    <rect key="frame" x="7" y="689" width="277" height="30"/>
+                    <rect key="frame" x="8" y="689" width="336" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QjX-CQ-x1T">
-                    <rect key="frame" x="350" y="688" width="51" height="30"/>
-                    <state key="normal" title="remove"/>
+                    <rect key="frame" x="352" y="688" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
                     <connections>
-                        <action selector="removeText:" destination="-1" eventType="touchUpInside" id="YUs-k6-JbK"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bh3-nN-pvl">
-                    <rect key="frame" x="301" y="688" width="30" height="30"/>
-                    <state key="normal" title="add"/>
-                    <connections>
-                        <action selector="addText:" destination="-1" eventType="touchUpInside" id="ttu-XI-ViM"/>
+                        <action selector="pushAction1:" destination="-1" eventType="touchUpInside" id="Me2-kE-hbJ"/>
                     </connections>
                 </button>
             </subviews>
