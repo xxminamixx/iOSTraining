@@ -1,3 +1,4 @@
+
 //
 //  ViewController.m
 //  UITextField
@@ -36,20 +37,13 @@
 
 - (BOOL)textFieldShouldReturn:(UITextField *)targetTextField {
     
-    
     if (_textField.text.length) {
-        NSInteger count = _textView.text.length;
-        NSString *str = [[NSString stringWithFormat:@"%ld", (long)count];
-        
+        _textFieldCount.text = [NSString stringWithFormat:@"%lu", _textField.text.length];
     }
-
     
     if (_textView.text.length) {
-        _textViewCount.text = _textViewCount.text.length;
+        _textViewCount.text = [NSString stringWithFormat:@"%lu", _textView.text.length];
     }
-    
-    
-    
         
     // textFieldを最初にイベントを受け取る対象から外すことで、
     // キーボードを閉じる。
