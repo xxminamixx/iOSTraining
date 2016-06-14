@@ -9,7 +9,9 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
+@property (weak, nonatomic) IBOutlet UITableView *desk;
+@property (weak, nonatomic) IBOutlet UITextField *text;
+@property __weak NSMutableArray *memo;
 @end
 
 @implementation ViewController
@@ -24,4 +26,22 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - table View
+- (NSInteger)tableView:(UITableView *)tableView
+numberOfRowsInSection:(NSInteger)section
+{
+    return _memo.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView
+cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [_desk dequeueReusableCellWithIdentifier:@"Cell"];
+    
+    if (cell) {
+        c = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
+        
+    }
+    return cell;
+}
 @end

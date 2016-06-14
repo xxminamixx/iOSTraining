@@ -9,7 +9,8 @@
 #import "TVSViewController.h"
 
 @interface TVSViewController ()
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak
+           , nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -42,7 +43,7 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"Cell"];
     }
-    cell.textLabel.text = [NSString stringWithFormat:@"%d", indexPath.row];
+   // cell.textLabel.text = [NSString stringWithFormat:@"%ld", (long)indexPath.row];
     return cell;
 }
 

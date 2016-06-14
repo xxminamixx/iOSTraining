@@ -19,13 +19,11 @@
                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3HA-ui-u1M">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="girl.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="3HA-ui-u1M">
                     <rect key="frame" x="0.0" y="41" width="87" height="87"/>
-                    <string key="image">68747470733a2f2f7261772e6769746875622e636f6d2f6d6978692d696e632f694f53547261696e696e672f6d61737465722f53616d706c6550726f6a656374732f342e332f5461626c655669657753616d706c652f5461626c655669657753616d706c652f6d61696d61692e6a7067.jpeg</string>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nDi-E9-Nu5">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloud.png" translatesAutoresizingMaskIntoConstraints="NO" id="nDi-E9-Nu5">
                     <rect key="frame" x="85" y="-1" width="240" height="128"/>
-                    <string key="image">68747470733a2f2f7261772e6769746875622e636f6d2f6d6978692d696e632f694f53547261696e696e672f6d61737465722f53616d706c6550726f6a656374732f342e332f5461626c655669657753616d706c652f5461626c655669657753616d706c652f66756b6964617368695f6c6566742e706e67.png</string>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -33,11 +31,7 @@
         </view>
     </objects>
     <resources>
-        <image width="133" height="144">
-            <string key="name">68747470733a2f2f7261772e6769746875622e636f6d2f6d6978692d696e632f694f53547261696e696e672f6d61737465722f53616d706c6550726f6a656374732f342e332f5461626c655669657753616d706c652f5461626c655669657753616d706c652f66756b6964617368695f6c6566742e706e67.png</string>
-        </image>
-        <image width="180" height="180">
-            <string key="name">68747470733a2f2f7261772e6769746875622e636f6d2f6d6978692d696e632f694f53547261696e696e672f6d61737465722f53616d706c6550726f6a656374732f342e332f5461626c655669657753616d706c652f5461626c655669657753616d706c652f6d61696d61692e6a7067.jpeg</string>
-        </image>
+        <image name="cloud.png" width="133" height="144"/>
+        <image name="girl.jpeg" width="180" height="180"/>
     </resources>
 </document>
