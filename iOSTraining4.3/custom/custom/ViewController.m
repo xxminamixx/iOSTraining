@@ -20,6 +20,7 @@
     _tablecell = [[TableViewCell alloc] initWithNibName:@"TableViewCell" bundle:nil];
     
     [self.view addSubview:_tablecell.view];
+
     
     
     
