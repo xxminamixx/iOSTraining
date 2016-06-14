@@ -46,7 +46,7 @@
     NSLog(@"here!!");
     
     // 4. 不要になったgroupをrelease
-    //dispatch_release(group);　//前は自動で行われなかった？
+    //dispatch_release(group);　//この部分でエラー
 }
 
 - (void)didReceiveMemoryWarning {
