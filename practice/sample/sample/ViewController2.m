@@ -10,8 +10,6 @@
 
 @interface ViewController2 ()
 @property (weak, nonatomic) IBOutlet UILabel *lebel1;
-@property (weak, nonatomic) IBOutlet UILabel *label2;
-@property (weak, nonatomic) IBOutlet UILabel *label3;
 - (IBAction)reson:(id)sender;
 
 @end
