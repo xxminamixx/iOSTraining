@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
+    /*
     for (NSInteger i = 0 ; i < 100; ++i) {
         dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
         dispatch_sync(queue, ^{
@@ -26,7 +26,7 @@
     }
     
     NSLog(@"here!!");
-    
+     */
     
     dispatch_group_t group = dispatch_group_create(); // 1. dispatch group の生成
     
