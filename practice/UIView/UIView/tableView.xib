@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="tableView">
             <connections>
+                <outlet property="label" destination="i3L-XA-f9Z" id="3TA-cx-3ps"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -29,7 +30,7 @@
                     <rect key="frame" x="352" y="688" width="46" height="30"/>
                     <state key="normal" title="Button"/>
                     <connections>
-                        <action selector="pushAction1:" destination="-1" eventType="touchUpInside" id="Me2-kE-hbJ"/>
+                        <action selector="push:" destination="-1" eventType="touchUpInside" id="80H-P7-1pB"/>
                     </connections>
                 </button>
             </subviews>

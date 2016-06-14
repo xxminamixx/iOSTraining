@@ -8,6 +8,23 @@
 
 #import <UIKit/UIKit.h>
 
-@interface tableView : UIViewController
+//protocolを宣言しておく
+@protocol tableDelegate;
 
+@interface tableView : UIViewController
+{
+    id<tableDelegate> _delegate;
+}
+
+@property (weak, nonatomic) id<tableDelegate> delegate;
+
+-(void)call;
+
+@end
+
+#pragma mark delegate prottype
+//protocol宣言
+@protocol tableDelegate<NSObject>
+@optional
+- (void)showlog;
 @end

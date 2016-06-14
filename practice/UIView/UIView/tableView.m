@@ -6,18 +6,17 @@
 //  Copyright © 2016年 Minami Kyohei. All rights reserved.
 //
 
-// Delegate用のプロトコルを宣言 @property id <ここに対応> delegate;
-@protocol TableView <NSObject>
+#import "tableView.h"
 
-- (void)copyText:(NSString *) label;
-@end
 
 @interface tableView ()
-- (IBAction)pushAction1:(id)sender;
-@property (weak, nonatomic) id <TableView> delegate;
 @end
 
+
 @implementation tableView
+
+//delegateを宣言しておく
+@synthesize delegate;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -29,7 +28,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -37,17 +36,20 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-
-
-
-/*
-- (IBAction)removeText:(id)sender {
-    
-}
 */
 
-- (IBAction)pushAction1:(id)sender {
-    NSString *str = @"delegate clear";
-    [self.delegate copyText: str];
+- (void)call
+{
+    [delegate showlog];
 }
+
+/*
+- (IBAction)push:(id)sender {
+    //参照先がメソッドの実装をしているか判定
+    if([self.delegate respondsToSelector:@selector(delegateTest)]) {
+        [self.delegate delegateTest];
+    }
+    
+}
+ */
 @end
