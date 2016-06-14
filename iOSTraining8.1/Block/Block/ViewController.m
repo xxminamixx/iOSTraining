@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+typedef void (^typed_tes)(NSString *); // ブロック宣言
 
 @interface ViewController ()
 
@@ -30,6 +31,13 @@
     void (^print) (NSString *);
     print = ^void (NSString *str) { NSLog(@"%@", str); };
     print(@"日本");
+    
+    //typedefで宣言したブロック
+    typed_tes test = ^(NSString *str){
+        NSLog(@"%@", str);
+    };
+    test(@"typedef test");
+    
 }
 
 - (void)didReceiveMemoryWarning {
