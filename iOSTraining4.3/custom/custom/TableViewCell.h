@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface TableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *girlLabel;
 
 @end

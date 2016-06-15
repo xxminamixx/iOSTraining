@@ -52,6 +52,9 @@
     //書き慣れない
     // NSString *identifer = indexPath.row % 2 == 0 ? @"girl" : @"boy";
     
+    _tableCell.girlLabel.text = [NSString stringWithFormat:@"%ld", (long)indexPath.row];
+
+    
     NSString *identifer;
     if (indexPath.row % 2 == 0) {
         identifer = @"boy";
