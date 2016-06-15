@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface TableViewCell2 : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *boyLabel;
+
 
 @end

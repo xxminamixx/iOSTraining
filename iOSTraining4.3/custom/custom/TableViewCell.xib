@@ -29,7 +29,7 @@
                 </subviews>
             </tableViewCellContentView>
             <connections>
-                <outlet property="girlLabel" destination="txW-XO-RRZ" id="18D-Yr-Htj"/>
+                <outlet property="girlLabel" destination="txW-XO-RRZ" id="Qgd-db-NxW"/>
             </connections>
             <point key="canvasLocation" x="333" y="328.5"/>
         </tableViewCell>

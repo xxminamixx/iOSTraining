@@ -8,11 +8,12 @@
 
 #import "ViewController.h"
 #import "TableViewCell.h"
+#import "BoyTableViewCell.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property TableViewCell *tableCell;
-@property TableViewCell *tableCell2;
+@property BoyTableViewCell *boyCell;
 @end
 
 @implementation ViewController
@@ -24,11 +25,11 @@
     _tableView.dataSource = self;
     
     //ViewControllerのViewにTableViewCellを登録
-    UINib *nib = [UINib nibWithNibName:@"TableViewCell" bundle:nil];
-    [self.tableView registerNib:nib forCellReuseIdentifier:@"girl"];
+    UINib *girlnib = [UINib nibWithNibName:@"TableViewCell" bundle:nil];
+    [self.tableView registerNib:girlnib forCellReuseIdentifier:@"girl"];
     
-    nib = [UINib nibWithNibName:@"TableViewCell2" bundle:nil];
-    [self.tableView registerNib:nib forCellReuseIdentifier:@"boy"];
+    UINib *boynib = [UINib nibWithNibName:@"BoyTableViewCell" bundle:nil];
+    [self.tableView registerNib:boynib forCellReuseIdentifier:@"boy"];
     
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -51,20 +52,21 @@
     
     //書き慣れない
     // NSString *identifer = indexPath.row % 2 == 0 ? @"girl" : @"boy";
-    
-    //_tableCell.girlLabel.text = [NSString stringWithFormat:@"%ld", (long)indexPath.row];
-
-    
+  
+    //簡単に表示分ける方法は？
+    //indexPath.row始まりは0?
     NSString *identifer;
     if (indexPath.row % 2 == 0) {
         identifer = @"boy";
+        _boyCell.boyLabel.text = [NSString stringWithFormat:@"%ld", (long)indexPath.row];
+        _boyCell = [tableView dequeueReusableCellWithIdentifier:identifer];
+        return _boyCell;
     } else {
         identifer = @"girl";
+        _tableCell.girlLabel.text = [NSString stringWithFormat:@"%ld", (long)indexPath.row];
+        _tableCell = [tableView dequeueReusableCellWithIdentifier:identifer];
+        return _tableCell;
     }
-    
-    _tableCell = [tableView dequeueReusableCellWithIdentifier:identifer];
-    
-    return _tableCell;
 }
 
 //tableViewのcellの高さを返す

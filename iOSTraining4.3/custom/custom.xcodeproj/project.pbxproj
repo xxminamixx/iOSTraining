@@ -20,8 +20,8 @@
 		E9F35F611D10DD4F00AB5902 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9F35F5F1D10DD4F00AB5902 /* TableViewCell.xib */; };
 		E9F35F641D10F07300AB5902 /* boy.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E9F35F621D10F07300AB5902 /* boy.jpeg */; };
 		E9F35F651D10F07300AB5902 /* redcloud.png in Resources */ = {isa = PBXBuildFile; fileRef = E9F35F631D10F07300AB5902 /* redcloud.png */; };
-		E9F35F691D10F0A600AB5902 /* TableViewCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F35F671D10F0A600AB5902 /* TableViewCell2.m */; };
-		E9F35F6A1D10F0A600AB5902 /* TableViewCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9F35F681D10F0A600AB5902 /* TableViewCell2.xib */; };
+		E9F35F6E1D110C7000AB5902 /* BoyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F35F6C1D110C7000AB5902 /* BoyTableViewCell.m */; };
+		E9F35F6F1D110C7000AB5902 /* BoyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9F35F6D1D110C7000AB5902 /* BoyTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,9 +55,9 @@
 		E9F35F5F1D10DD4F00AB5902 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		E9F35F621D10F07300AB5902 /* boy.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boy.jpeg; sourceTree = SOURCE_ROOT; };
 		E9F35F631D10F07300AB5902 /* redcloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redcloud.png; sourceTree = SOURCE_ROOT; };
-		E9F35F661D10F0A600AB5902 /* TableViewCell2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell2.h; sourceTree = "<group>"; };
-		E9F35F671D10F0A600AB5902 /* TableViewCell2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell2.m; sourceTree = "<group>"; };
-		E9F35F681D10F0A600AB5902 /* TableViewCell2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell2.xib; sourceTree = "<group>"; };
+		E9F35F6B1D110C7000AB5902 /* BoyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoyTableViewCell.h; path = ../BoyTableViewCell.h; sourceTree = "<group>"; };
+		E9F35F6C1D110C7000AB5902 /* BoyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BoyTableViewCell.m; path = ../BoyTableViewCell.m; sourceTree = "<group>"; };
+		E9F35F6D1D110C7000AB5902 /* BoyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BoyTableViewCell.xib; path = ../BoyTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +99,12 @@
 		E98412E91D0AAF3B00D4F085 /* custom */ = {
 			isa = PBXGroup;
 			children = (
+				E9F35F6B1D110C7000AB5902 /* BoyTableViewCell.h */,
+				E9F35F6C1D110C7000AB5902 /* BoyTableViewCell.m */,
+				E9F35F6D1D110C7000AB5902 /* BoyTableViewCell.xib */,
 				E9F35F5D1D10DD4F00AB5902 /* TableViewCell.h */,
 				E9F35F5E1D10DD4F00AB5902 /* TableViewCell.m */,
 				E9F35F5F1D10DD4F00AB5902 /* TableViewCell.xib */,
-				E9F35F661D10F0A600AB5902 /* TableViewCell2.h */,
-				E9F35F671D10F0A600AB5902 /* TableViewCell2.m */,
-				E9F35F681D10F0A600AB5902 /* TableViewCell2.xib */,
 				E98412ED1D0AAF3B00D4F085 /* AppDelegate.h */,
 				E98412EE1D0AAF3B00D4F085 /* AppDelegate.m */,
 				E98412F01D0AAF3B00D4F085 /* ViewController.h */,
@@ -223,11 +223,11 @@
 				E9F35F651D10F07300AB5902 /* redcloud.png in Resources */,
 				E9F35F611D10DD4F00AB5902 /* TableViewCell.xib in Resources */,
 				E934DCFE1D0FFA1500B32ADF /* girl.jpeg in Resources */,
-				E9F35F6A1D10F0A600AB5902 /* TableViewCell2.xib in Resources */,
 				E98412FA1D0AAF3B00D4F085 /* LaunchScreen.storyboard in Resources */,
 				E9F35F641D10F07300AB5902 /* boy.jpeg in Resources */,
 				E98412F71D0AAF3B00D4F085 /* Assets.xcassets in Resources */,
 				E98412F51D0AAF3B00D4F085 /* Main.storyboard in Resources */,
+				E9F35F6F1D110C7000AB5902 /* BoyTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,11 +245,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9F35F691D10F0A600AB5902 /* TableViewCell2.m in Sources */,
 				E98412F21D0AAF3B00D4F085 /* ViewController.m in Sources */,
 				E9F35F601D10DD4F00AB5902 /* TableViewCell.m in Sources */,
 				E98412EF1D0AAF3B00D4F085 /* AppDelegate.m in Sources */,
 				E98412EC1D0AAF3B00D4F085 /* main.m in Sources */,
+				E9F35F6E1D110C7000AB5902 /* BoyTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

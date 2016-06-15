@@ -1,5 +1,5 @@
 //
-//  TableViewCell.h
+//  BoyTableViewCell.h
 //  custom
 //
 //  Created by Minami Kyohei on 2016/06/15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TableViewCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UILabel *girlLabel;
+@interface BoyTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *boyLabel;
 @end
