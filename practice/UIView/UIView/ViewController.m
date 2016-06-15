@@ -24,7 +24,7 @@
     */
 
     tableView *table = [tableView new];
-    table.delegate = self;
+    //table.delegate = self;
     [table call];
 }
 
