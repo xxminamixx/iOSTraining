@@ -57,15 +57,15 @@
     //indexPath.row始まりは0?
     
     if (indexPath.row % 2 == 0) {
-        
-        _boyCell = [tableView dequeueReusableCellWithIdentifier:@"boy"];
-         _boyCell.boyLabel.text = [NSString stringWithFormat:@"%ld", (long)indexPath.row];
-        return _boyCell;
+        BoyTableViewCell *boycell = [BoyTableViewCell new];
+        boycell = [tableView dequeueReusableCellWithIdentifier:@"boy"];
+        boycell.boyLabel.text = [NSString stringWithFormat:@"%ld", (long)indexPath.row];
+        return boycell;
     } else {
-        
-        _tableCell = [tableView dequeueReusableCellWithIdentifier:@"girl"];
-        _tableCell.girlLabel.text = [NSString stringWithFormat:@"%ld", (long)indexPath.row];
-        return _tableCell;
+        TableViewCell *girlcell = [TableViewCell new];
+        girlcell = [tableView dequeueReusableCellWithIdentifier:@"girl"];
+        girlcell.girlLabel.text = [NSString stringWithFormat:@"%ld", (long)indexPath.row];
+        return girlcell;
     }
      
     

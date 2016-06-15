@@ -10,4 +10,5 @@
 
 @interface BoyTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *boyLabel;
+
 @end

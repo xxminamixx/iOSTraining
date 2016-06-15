@@ -35,7 +35,7 @@
                 </subviews>
             </tableViewCellContentView>
             <connections>
-                <outlet property="boyLabel" destination="llN-Bj-6t7" id="lp4-E3-neY"/>
+                <outlet property="boyLabel" destination="bQL-Sc-v0X" id="20x-9g-5Wn"/>
             </connections>
             <point key="canvasLocation" x="340" y="374.5"/>
         </tableViewCell>
