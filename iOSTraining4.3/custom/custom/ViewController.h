@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 @class TableViewCell;
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 
 
 @end
