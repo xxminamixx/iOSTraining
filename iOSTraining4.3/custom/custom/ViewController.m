@@ -42,9 +42,8 @@
 //必須メソッド
 //tableViewのcellの数を返す
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    // UITableViewの表示する行数を設定します。
-    //「return 0」から「return 1」に変更します。(1行表示されるようになります)
-    return 6;
+    //100cell用意
+    return 100;
 }
 
 //tableViewに表示するcellを返す
