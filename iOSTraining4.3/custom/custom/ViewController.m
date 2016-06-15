@@ -44,29 +44,33 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // UITableViewの表示する行数を設定します。
     //「return 0」から「return 1」に変更します。(1行表示されるようになります)
-    return 5;
+    return 6;
 }
 
 //tableViewに表示するcellを返す
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     //書き慣れない
-    // NSString *identifer = indexPath.row % 2 == 0 ? @"girl" : @"boy";
+    //NSString *identifer = indexPath.row % 2 == 0 ? @"girl" : @"boy";
   
     //簡単に表示分ける方法は？
     //indexPath.row始まりは0?
-    NSString *identifer;
+    
     if (indexPath.row % 2 == 0) {
-        identifer = @"boy";
-        _boyCell.boyLabel.text = [NSString stringWithFormat:@"%ld", (long)indexPath.row];
-        _boyCell = [tableView dequeueReusableCellWithIdentifier:identifer];
+        
+        _boyCell = [tableView dequeueReusableCellWithIdentifier:@"boy"];
+         _boyCell.boyLabel.text = [NSString stringWithFormat:@"%ld", (long)indexPath.row];
         return _boyCell;
     } else {
-        identifer = @"girl";
+        
+        _tableCell = [tableView dequeueReusableCellWithIdentifier:@"girl"];
         _tableCell.girlLabel.text = [NSString stringWithFormat:@"%ld", (long)indexPath.row];
-        _tableCell = [tableView dequeueReusableCellWithIdentifier:identifer];
         return _tableCell;
     }
+     
+    
+    //TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifer];
+    //return  cell;
 }
 
 //tableViewのcellの高さを返す
@@ -74,4 +78,10 @@
   
     return 125;
 }
+
+//セルがタップされたときの処理
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"%@", indexPath);
+}
+
 @end
