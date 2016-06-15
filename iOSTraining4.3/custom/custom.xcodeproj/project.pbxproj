@@ -16,8 +16,8 @@
 		E98412F71D0AAF3B00D4F085 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E98412F61D0AAF3B00D4F085 /* Assets.xcassets */; };
 		E98412FA1D0AAF3B00D4F085 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E98412F81D0AAF3B00D4F085 /* LaunchScreen.storyboard */; };
 		E98413051D0AAF3B00D4F085 /* customUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E98413041D0AAF3B00D4F085 /* customUITests.m */; };
-		E98413121D0AAF5700D4F085 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E98413101D0AAF5700D4F085 /* TableViewCell.m */; };
-		E98413131D0AAF5700D4F085 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E98413111D0AAF5700D4F085 /* TableViewCell.xib */; };
+		E9F35F601D10DD4F00AB5902 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F35F5E1D10DD4F00AB5902 /* TableViewCell.m */; };
+		E9F35F611D10DD4F00AB5902 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9F35F5F1D10DD4F00AB5902 /* TableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,9 +46,9 @@
 		E98413001D0AAF3B00D4F085 /* customUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = customUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E98413041D0AAF3B00D4F085 /* customUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = customUITests.m; sourceTree = "<group>"; };
 		E98413061D0AAF3B00D4F085 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E984130F1D0AAF5700D4F085 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewCell.h; path = ../TableViewCell.h; sourceTree = "<group>"; };
-		E98413101D0AAF5700D4F085 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewCell.m; path = ../TableViewCell.m; sourceTree = "<group>"; };
-		E98413111D0AAF5700D4F085 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TableViewCell.xib; path = ../TableViewCell.xib; sourceTree = "<group>"; };
+		E9F35F5D1D10DD4F00AB5902 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		E9F35F5E1D10DD4F00AB5902 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		E9F35F5F1D10DD4F00AB5902 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,9 +90,9 @@
 		E98412E91D0AAF3B00D4F085 /* custom */ = {
 			isa = PBXGroup;
 			children = (
-				E984130F1D0AAF5700D4F085 /* TableViewCell.h */,
-				E98413101D0AAF5700D4F085 /* TableViewCell.m */,
-				E98413111D0AAF5700D4F085 /* TableViewCell.xib */,
+				E9F35F5D1D10DD4F00AB5902 /* TableViewCell.h */,
+				E9F35F5E1D10DD4F00AB5902 /* TableViewCell.m */,
+				E9F35F5F1D10DD4F00AB5902 /* TableViewCell.xib */,
 				E98412ED1D0AAF3B00D4F085 /* AppDelegate.h */,
 				E98412EE1D0AAF3B00D4F085 /* AppDelegate.m */,
 				E98412F01D0AAF3B00D4F085 /* ViewController.h */,
@@ -206,9 +206,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E934DCFD1D0FFA1500B32ADF /* cloud.png in Resources */,
+				E9F35F611D10DD4F00AB5902 /* TableViewCell.xib in Resources */,
 				E934DCFE1D0FFA1500B32ADF /* girl.jpeg in Resources */,
 				E98412FA1D0AAF3B00D4F085 /* LaunchScreen.storyboard in Resources */,
-				E98413131D0AAF5700D4F085 /* TableViewCell.xib in Resources */,
 				E98412F71D0AAF3B00D4F085 /* Assets.xcassets in Resources */,
 				E98412F51D0AAF3B00D4F085 /* Main.storyboard in Resources */,
 			);
@@ -229,7 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E98412F21D0AAF3B00D4F085 /* ViewController.m in Sources */,
-				E98413121D0AAF5700D4F085 /* TableViewCell.m in Sources */,
+				E9F35F601D10DD4F00AB5902 /* TableViewCell.m in Sources */,
 				E98412EF1D0AAF3B00D4F085 /* AppDelegate.m in Sources */,
 				E98412EC1D0AAF3B00D4F085 /* main.m in Sources */,
 			);

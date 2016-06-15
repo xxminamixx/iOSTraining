@@ -10,19 +10,23 @@
 #import "TableViewCell.h"
 
 @interface ViewController ()
-@property TableViewCell *tablecell;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property TableViewCell *tableCell;
 @end
 
-@implementation ViewController
+@implementation ViewController　
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _tablecell = [[TableViewCell alloc] initWithNibName:@"TableViewCell" bundle:nil];
     
-    [self.view addSubview:_tablecell.view];
-
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
     
+    //ViewControllerのViewにTableViewCellを登録
+    UINib *nib = [UINib nibWithNibName:@"TableViewCell" bundle:nil];
+    [self.tableView registerNib:nib forCellReuseIdentifier:@"Cell"];
     
+    //[self.view addSubview: _tableCell];
     
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -32,4 +36,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    // UITableViewの表示する行数を設定します。
+    //「return 0」から「return 1」に変更します。(1行表示されるようになります)
+    return 5;
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+     _tableCell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    
+    return _tableCell;
+}
 @end
