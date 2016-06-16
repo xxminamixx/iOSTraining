@@ -18,14 +18,41 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eQg-cS-J6p">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="648"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                             </webView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hKP-P3-oXn">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="adW-Kp-hqC"/>
+                                </items>
+                            </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vcT-Jo-yCI">
+                                <rect key="frame" x="0.0" y="692" width="414" height="44"/>
+                                <items>
+                                    <barButtonItem title="戻る" id="2q1-PI-tDb">
+                                        <connections>
+                                            <action selector="back:" destination="BYZ-38-t0r" id="rfa-sA-Qfa"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="進む" id="sYu-tS-qbg">
+                                        <connections>
+                                            <action selector="next:" destination="BYZ-38-t0r" id="hEj-Yd-aDh"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="更新" id="3kE-yo-TL1">
+                                        <connections>
+                                            <action selector="reroad:" destination="BYZ-38-t0r" id="Bbx-7j-JMl"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="naviTitle" destination="adW-Kp-hqC" id="D4o-z6-iq2"/>
                         <outlet property="webView" destination="eQg-cS-J6p" id="zAy-qZ-5EI"/>
                     </connections>
                 </viewController>
