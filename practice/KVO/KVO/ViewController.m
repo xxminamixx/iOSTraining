@@ -7,21 +7,25 @@
 //
 
 #import "ViewController.h"
+#import "ViewController2.h"
 
 @interface ViewController ()
-
+-(void)catch;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
     
-    NSNotificationCenter *alert;
-    [alert addObserver:self  // [1] 監視者
-               forKeyPath:@"label" // [2] 監視対象のキー値
-                  options:(NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld) // [3] オプションの指定
-                  context:nil]; //[4] 任意のオブジェクトを指定
+    UINib *nib = [UINib nibWithNibName:@"ViewController2" bundle:nil];
+    [nib instantiateWithOwner:self options:nil];
+    
+    //生成
+    NSNotificationCenter *alert = [NSNotificationCenter defaultCenter];
+    [alert addObserver:self selector:@selector(catch) name:@"chatch" object:nil];
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -30,12 +34,10 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)observeValueForKeyPath:(NSString *)keyPath
-                     ofObject:(id)object
-                       change:(NSDictionary *)change
-                      context:(void *)context
+-(void)catch
 {
-    NSLog(@"%@", change);
+    NSLog(@"catch");
 }
+
 
 @end

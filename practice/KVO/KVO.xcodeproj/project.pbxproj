@@ -14,6 +14,8 @@
 		E9EEBAF71D124D850085B378 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9EEBAF61D124D850085B378 /* Assets.xcassets */; };
 		E9EEBAFA1D124D850085B378 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9EEBAF81D124D850085B378 /* LaunchScreen.storyboard */; };
 		E9EEBB051D124D850085B378 /* KVOUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EEBB041D124D850085B378 /* KVOUITests.m */; };
+		E9EEBB211D1262B90085B378 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EEBB1F1D1262B90085B378 /* ViewController2.m */; };
+		E9EEBB221D1262B90085B378 /* ViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9EEBB201D1262B90085B378 /* ViewController2.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		E9EEBB001D124D850085B378 /* KVOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KVOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9EEBB041D124D850085B378 /* KVOUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOUITests.m; sourceTree = "<group>"; };
 		E9EEBB061D124D850085B378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9EEBB1E1D1262B90085B378 /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController2.h; path = ../ViewController2.h; sourceTree = "<group>"; };
+		E9EEBB1F1D1262B90085B378 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController2.m; path = ../ViewController2.m; sourceTree = "<group>"; };
+		E9EEBB201D1262B90085B378 /* ViewController2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ViewController2.xib; path = ../ViewController2.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +86,9 @@
 		E9EEBAE91D124D850085B378 /* KVO */ = {
 			isa = PBXGroup;
 			children = (
+				E9EEBB1E1D1262B90085B378 /* ViewController2.h */,
+				E9EEBB1F1D1262B90085B378 /* ViewController2.m */,
+				E9EEBB201D1262B90085B378 /* ViewController2.xib */,
 				E9EEBAED1D124D850085B378 /* AppDelegate.h */,
 				E9EEBAEE1D124D850085B378 /* AppDelegate.m */,
 				E9EEBAF01D124D850085B378 /* ViewController.h */,
@@ -192,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9EEBAFA1D124D850085B378 /* LaunchScreen.storyboard in Resources */,
+				E9EEBB221D1262B90085B378 /* ViewController2.xib in Resources */,
 				E9EEBAF71D124D850085B378 /* Assets.xcassets in Resources */,
 				E9EEBAF51D124D850085B378 /* Main.storyboard in Resources */,
 			);
@@ -212,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9EEBAF21D124D850085B378 /* ViewController.m in Sources */,
+				E9EEBB211D1262B90085B378 /* ViewController2.m in Sources */,
 				E9EEBAEF1D124D850085B378 /* AppDelegate.m in Sources */,
 				E9EEBAEC1D124D850085B378 /* main.m in Sources */,
 			);
