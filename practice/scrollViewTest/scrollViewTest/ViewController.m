@@ -9,7 +9,6 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
@@ -21,7 +20,6 @@
     _tableView.delegate = self;
     _tableView.dataSource = self;
     // Do any additional setup after loading the view, typically from a nib.
-    _scrollView.contentSize =　_tableView.frame.size;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -49,5 +47,8 @@
     return 100;
 }
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    NSLog(@"スクロール");
+}
 
 @end
