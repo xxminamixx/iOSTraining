@@ -34,3 +34,15 @@ block構文やNSNotification、NSNotificationCenter
 typedefを使った宣言、通知の受け取り  
 サーバーを介した処理  
 */  
+  
+#6月15日(水)  
+UIKit関連復習  
+2.UIKit 1 - container, rotate -  
+3.UIKit 2 - UIView -  
+4.UIKit 3 - table view -   
+5.UIKit 4 - image and text -  
+/*  
+UITableViewのcellを増やす  
+cellに割り当てるcustomCellを構築する  
+imageViewを扱う  
+*/  
