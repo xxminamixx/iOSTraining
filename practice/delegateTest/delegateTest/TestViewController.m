@@ -28,7 +28,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-//デリゲート
+//4.デリゲートメソッドの呼び出しを定義
 - (void)call:(NSString *)str;
 {
      NSLog(@"デリゲードメソッドを呼びます");

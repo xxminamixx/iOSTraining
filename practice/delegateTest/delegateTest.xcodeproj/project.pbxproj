@@ -408,6 +408,7 @@
 				E9F35FD31D112CEE00AB5902 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E9F35FD41D112CEE00AB5902 /* Build configuration list for PBXNativeTarget "delegateTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +417,7 @@
 				E9F35FD61D112CEE00AB5902 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
