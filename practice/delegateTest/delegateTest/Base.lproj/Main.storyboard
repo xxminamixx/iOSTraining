@@ -37,7 +37,7 @@
                                 <rect key="frame" x="164" y="294" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="u12-tm-gL3" kind="push" id="CX7-r3-pyA"/>
+                                    <action selector="push:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rfL-Gd-Fxa"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -49,22 +49,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="253.5" y="371.5"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="cmE-hQ-fdU">
-            <objects>
-                <viewController id="u12-tm-gL3" customClass="ViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Zbu-9F-66c">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="VlZ-ic-Icm"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="t2F-4x-tfH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="763.5" y="371.5"/>
         </scene>
     </scenes>
 </document>
