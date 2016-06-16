@@ -13,7 +13,6 @@
 		E9F35FBF1D112CEE00AB5902 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9F35FBE1D112CEE00AB5902 /* Assets.xcassets */; };
 		E9F35FC21D112CEE00AB5902 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9F35FC01D112CEE00AB5902 /* LaunchScreen.storyboard */; };
 		E9F35FCD1D112CEE00AB5902 /* delegateTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F35FCC1D112CEE00AB5902 /* delegateTestUITests.m */; };
-		E9F35FD91D112D6400AB5902 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F35FD81D112D6400AB5902 /* TestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +38,6 @@
 		E9F35FC81D112CEE00AB5902 /* delegateTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = delegateTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F35FCC1D112CEE00AB5902 /* delegateTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = delegateTestUITests.m; sourceTree = "<group>"; };
 		E9F35FCE1D112CEE00AB5902 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E9F35FD71D112D6400AB5902 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
-		E9F35FD81D112D6400AB5902 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +81,6 @@
 			children = (
 				E9F35FB51D112CEE00AB5902 /* AppDelegate.h */,
 				E9F35FB61D112CEE00AB5902 /* AppDelegate.m */,
-				E9F35FD71D112D6400AB5902 /* TestViewController.h */,
-				E9F35FD81D112D6400AB5902 /* TestViewController.m */,
 				E9F35FB81D112CEE00AB5902 /* ViewController.h */,
 				E9F35FB91D112CEE00AB5902 /* ViewController.m */,
 				E9F35FBE1D112CEE00AB5902 /* Assets.xcassets */,
@@ -214,7 +209,6 @@
 			files = (
 				E9F35FBA1D112CEE00AB5902 /* ViewController.m in Sources */,
 				E9F35FB71D112CEE00AB5902 /* AppDelegate.m in Sources */,
-				E9F35FD91D112D6400AB5902 /* TestViewController.m in Sources */,
 				E9F35FB41D112CEE00AB5902 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
