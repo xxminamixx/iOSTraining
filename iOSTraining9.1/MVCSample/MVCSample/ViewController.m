@@ -42,8 +42,24 @@
 }
 
 - (IBAction)view2:(id)sender {
+    // ストーリーボードを指定する
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    // 遷移先のViewControllerをStoryBoardをもとに作成
+    ViewControllerHndle *handle = [storyboard instantiateViewControllerWithIdentifier:@"View2"];
+    
+    // 画面をPUSHで遷移させる
+    [self.navigationController pushViewController:handle animated:YES];
 }
 
 - (IBAction)view3:(id)sender {
+    // ストーリーボードを指定する
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    // 遷移先のViewControllerをStoryBoardをもとに作成
+    ViewControllerHndle *handle = [storyboard instantiateViewControllerWithIdentifier:@"View3"];
+    
+    // 画面をPUSHで遷移させる
+    [self.navigationController pushViewController:handle animated:YES];
 }
 @end
