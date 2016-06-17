@@ -1,5 +1,5 @@
 //
-//  ViewControllerHndle.h
+//  ViewControllerHandle.h
 //  MVCSample
 //
 //  Created by Minami Kyohei on 2016/06/17.

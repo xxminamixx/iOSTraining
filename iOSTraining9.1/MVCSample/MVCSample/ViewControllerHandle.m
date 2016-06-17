@@ -1,12 +1,13 @@
 //
-//  ViewControllerHndle.m
+//  ViewControllerHandle.m
 //  MVCSample
 //
 //  Created by Minami Kyohei on 2016/06/17.
 //  Copyright © 2016年 Minami Kyohei. All rights reserved.
 //
 
-#import "ViewControllerHndle.h"
+
+#import "ViewControllerHandle.h"
 #import "ViewController.h"
 
 @interface ViewControllerHndle () <pushButton>
@@ -54,7 +55,7 @@
     
     // 画面をPUSHで遷移させる
     [self.navigationController pushViewController:handle animated:YES];
-
+    
 }
 
 
@@ -68,8 +69,9 @@
     
     // 画面をPUSHで遷移させる
     [self.navigationController pushViewController:handle animated:YES];
-
+    
 }
 
 
 @end
+
