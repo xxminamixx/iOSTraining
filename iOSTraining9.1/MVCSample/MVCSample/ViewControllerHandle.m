@@ -33,43 +33,18 @@
 #pragma mark - ViewController delegate method
 - (void)View1Action
 {
-    NSLog(@"デリゲードメソッドが呼ばれました");
-    // ストーリーボードを指定する
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    
-    // 遷移先のViewControllerをStoryBoardをもとに作成
-    ViewControllerHndle *handle = [storyboard instantiateViewControllerWithIdentifier:@"View1"];
-    
-    // 画面をPUSHで遷移させる
-    [self.navigationController pushViewController:handle animated:YES];
-    
+
 }
 
 - (void)View2Action
 {
-    // ストーリーボードを指定する
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    
-    // 遷移先のViewControllerをStoryBoardをもとに作成
-    ViewControllerHndle *handle = [storyboard instantiateViewControllerWithIdentifier:@"View2"];
-    
-    // 画面をPUSHで遷移させる
-    [self.navigationController pushViewController:handle animated:YES];
     
 }
 
 
 - (void)View3Action
 {
-    // ストーリーボードを指定する
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    
-    // 遷移先のViewControllerをStoryBoardをもとに作成
-    ViewControllerHndle *handle = [storyboard instantiateViewControllerWithIdentifier:@"View3"];
-    
-    // 画面をPUSHで遷移させる
-    [self.navigationController pushViewController:handle animated:YES];
-    
+        
 }
 
 
