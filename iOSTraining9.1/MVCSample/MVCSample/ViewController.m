@@ -10,6 +10,7 @@
 #import "ViewControllerHndle.h"
 
 @interface ViewController ()
+
 - (IBAction)view1:(id)sender;
 - (IBAction)view2:(id)sender;
 - (IBAction)view3:(id)sender;

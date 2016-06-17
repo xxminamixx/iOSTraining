@@ -18,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //通知もとのインスタンスのデリゲートに自身をセット
     ViewController *view = [ViewController new];
     view.delegate = self;
 }

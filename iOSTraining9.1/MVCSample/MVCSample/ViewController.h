@@ -10,7 +10,7 @@
 
 @protocol pushButton <NSObject>
 
-@optional
+@required
 - (void)View1Action;
 - (void)View2Action;
 - (void)View3Action;
@@ -20,6 +20,7 @@
 @interface ViewController : UIViewController
 @property (weak, nonatomic) id<pushButton> delegate;
 - (IBAction)view1:(id)sender;
-
+- (IBAction)view2:(id)sender;
+- (IBAction)view3:(id)sender;
 @end
 
