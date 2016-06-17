@@ -7,8 +7,9 @@
 //
 
 #import "ViewControllerHndle.h"
+#import "ViewController.h"
 
-@interface ViewControllerHndle ()
+@interface ViewControllerHndle () <pushButton>
 
 @end
 
@@ -16,7 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    ViewController *view = [ViewController new];
+    view.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -25,15 +28,47 @@
 }
 
 
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - ViewController delegate method
+- (void)View1Action
+{
+    NSLog(@"デリゲードメソッドが呼ばれました");
+    // ストーリーボードを指定する
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    // 遷移先のViewControllerをStoryBoardをもとに作成
+    ViewControllerHndle *handle = [storyboard instantiateViewControllerWithIdentifier:@"View1"];
+    
+    // 画面をPUSHで遷移させる
+    [self.navigationController pushViewController:handle animated:YES];
+    
 }
-*/
+
+- (void)View2Action
+{
+    // ストーリーボードを指定する
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    // 遷移先のViewControllerをStoryBoardをもとに作成
+    ViewControllerHndle *handle = [storyboard instantiateViewControllerWithIdentifier:@"View2"];
+    
+    // 画面をPUSHで遷移させる
+    [self.navigationController pushViewController:handle animated:YES];
+
+}
+
+
+- (void)View3Action
+{
+    // ストーリーボードを指定する
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    // 遷移先のViewControllerをStoryBoardをもとに作成
+    ViewControllerHndle *handle = [storyboard instantiateViewControllerWithIdentifier:@"View3"];
+    
+    // 画面をPUSHで遷移させる
+    [self.navigationController pushViewController:handle animated:YES];
+
+}
+
 
 @end

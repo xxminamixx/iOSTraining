@@ -13,7 +13,7 @@
 - (IBAction)view1:(id)sender;
 - (IBAction)view2:(id)sender;
 - (IBAction)view3:(id)sender;
-//@property ViewControllerHndle *handle;
+@property ViewControllerHndle *handle;
 @end
 
 @implementation ViewController
@@ -29,37 +29,23 @@
 }
 
 - (IBAction)view1:(id)sender {
-    
-    // ストーリーボードを指定する
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    
-    // 遷移先のViewControllerをStoryBoardをもとに作成
-    ViewControllerHndle *handle = [storyboard instantiateViewControllerWithIdentifier:@"View1"];
-    
-    // 画面をPUSHで遷移させる
-    [self.navigationController pushViewController:handle animated:YES];
-    
+    if ([self.delegate respondsToSelector:@selector(View1Action)]) {
+        NSLog(@"デリゲートメソッドを呼んでいます");
+        [self.delegate View2Action];
+    }
 }
 
 - (IBAction)view2:(id)sender {
-    // ストーリーボードを指定する
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    
-    // 遷移先のViewControllerをStoryBoardをもとに作成
-    ViewControllerHndle *handle = [storyboard instantiateViewControllerWithIdentifier:@"View2"];
-    
-    // 画面をPUSHで遷移させる
-    [self.navigationController pushViewController:handle animated:YES];
+    if ([self.delegate respondsToSelector:@selector(View2Action)]) {
+        NSLog(@"デリゲートメソッドを呼んでいます");
+        [self.delegate View2Action];
+    }
 }
 
 - (IBAction)view3:(id)sender {
-    // ストーリーボードを指定する
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    
-    // 遷移先のViewControllerをStoryBoardをもとに作成
-    ViewControllerHndle *handle = [storyboard instantiateViewControllerWithIdentifier:@"View3"];
-    
-    // 画面をPUSHで遷移させる
-    [self.navigationController pushViewController:handle animated:YES];
+    if ([self.delegate respondsToSelector:@selector(View3Action)]) {
+        NSLog(@"デリゲートメソッドを呼んでいます");
+        [self.delegate View3Action];
+    }
 }
 @end

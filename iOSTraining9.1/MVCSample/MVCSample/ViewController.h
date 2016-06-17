@@ -8,8 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@protocol pushButton <NSObject>
 
+@optional
+- (void)View1Action;
+- (void)View2Action;
+- (void)View3Action;
+
+@end
+
+@interface ViewController : UIViewController
+@property (weak, nonatomic) id<pushButton> delegate;
+- (IBAction)view1:(id)sender;
 
 @end
 

@@ -65,10 +65,10 @@
             </objects>
             <point key="canvasLocation" x="109.5" y="433.5"/>
         </scene>
-        <!--View Controller Hndle-->
+        <!--View Controller-->
         <scene sceneID="ICo-0X-4eV">
             <objects>
-                <viewController storyboardIdentifier="View1" id="aiL-BX-4Z6" customClass="ViewControllerHndle" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="View1" id="aiL-BX-4Z6" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VNZ-t9-kaP"/>
                         <viewControllerLayoutGuide type="bottom" id="5eb-gi-bJe"/>
