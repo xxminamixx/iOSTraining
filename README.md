@@ -35,7 +35,7 @@ typedefを使った宣言、通知の受け取り
 サーバーを介した処理  
 */  
   
-#6月15日(水)  
+# 6月15日(水)  
 UIKit関連復習  
 2.UIKit 1 - container, rotate -  
 3.UIKit 2 - UIView -  
@@ -45,4 +45,21 @@ UIKit関連復習
 UITableViewのcellを増やす  
 cellに割り当てるcustomCellを構築する  
 imageViewを扱う  
+*/  
+  
+# 6月16日(木)  
+復習  
+6.ネットワーク処理 
+7.ローカルキャッシュと通知
+8.Blocks, GCD  
+/*  
+UIWebViewを使ったWebサイトのURLリクエストの処理  
+UIWebViewにUINavigationBarを付加し  
+「戻るボタン」「進むボタン」「更新ボタン」などを作成  
+  
+NSUserDefaultsやNSFileManagerを使ったデータの保存  
+フォルダ構成やキャッシュの保持  
+  
+NSNotificationとNSNotificationCenterを用いた通知処理  
+Blocls構文の書き方  
 */  
