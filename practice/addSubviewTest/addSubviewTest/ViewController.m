@@ -1,12 +1,13 @@
 //
 //  ViewController.m
-//  CustomView
+//  addSubviewTest
 //
 //  Created by Minami Kyohei on 2016/06/17.
 //  Copyright © 2016年 Minami Kyohei. All rights reserved.
 //
 
 #import "ViewController.h"
+#import "myViewController.h"
 
 @interface ViewController ()
 
@@ -16,9 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UINib *nib = [UINib nibWithNibName:@"CustomViewController" bundle:nil];
-    [nib instantiateWithOwner:self options:nil];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    myViewController *myView = [myViewController new];
+    [self.view addSubview: myView.view];
 }
 
 - (void)didReceiveMemoryWarning {

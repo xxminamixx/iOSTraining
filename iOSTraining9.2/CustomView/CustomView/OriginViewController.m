@@ -9,7 +9,8 @@
 #import "OriginViewController.h"
 
 @interface OriginViewController ()
-
+@property (weak, nonatomic) IBOutlet UILabel *label1;
+@property (weak, nonatomic) IBOutlet UILabel *label2;
 @end
 
 @implementation OriginViewController
@@ -33,5 +34,15 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (void) setLabel1:(NSString *)str
+{
+    _label1.text = str;
+}
+
+- (NSString *) getLabel1
+{
+    return self.label1.text;
+}
 
 @end

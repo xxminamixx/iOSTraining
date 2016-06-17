@@ -7,16 +7,24 @@
 //
 
 #import "ViewController.h"
-#import "ViewControllerHndle.h"
+#import "ViewControllerHandle.h"
 
 @interface ViewController ()
-- (IBAction)view1:(id)sender;
-- (IBAction)view2:(id)sender;
-- (IBAction)view3:(id)sender;
-//@property ViewControllerHndle *handle;
+@property (weak, nonatomic) IBOutlet UILabel *label1;
+@property ViewControllerHndle *handle;
 @end
 
 @implementation ViewController
+@synthesize delegate;
+
+- (id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -29,9 +37,8 @@
 }
 
 - (IBAction)view1:(id)sender {
-   
     // ストーリーボードを指定する
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryBoard" bundle:nil];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     
     // 遷移先のViewControllerをStoryBoardをもとに作成
     ViewControllerHndle *handle = [storyboard instantiateViewControllerWithIdentifier:@"View1"];
@@ -39,16 +46,29 @@
     // 画面をPUSHで遷移させる
     [self.navigationController pushViewController:handle animated:YES];
     
-    
-    /*
-    ViewControllerHndle *handle = [ViewControllerHndle new];
-   [self presentViewController: handle animated:YES completion: nil];
-    */
 }
 
 - (IBAction)view2:(id)sender {
-}
+    // ストーリーボードを指定する
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    // 遷移先のViewControllerをStoryBoardをもとに作成
+    ViewControllerHndle *handle = [storyboard instantiateViewControllerWithIdentifier:@"View2"];
+    
+    // 画面をPUSHで遷移させる
+    [self.navigationController pushViewController:handle animated:YES];
+   }
 
 - (IBAction)view3:(id)sender {
-}
+    
+    // ストーリーボードを指定する
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    // 遷移先のViewControllerをStoryBoardをもとに作成
+    ViewControllerHndle *handle = [storyboard instantiateViewControllerWithIdentifier:@"View3"];
+    
+    // 画面をPUSHで遷移させる
+    [self.navigationController pushViewController:handle animated:YES];
+
+  }
 @end

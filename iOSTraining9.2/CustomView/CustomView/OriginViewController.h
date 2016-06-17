@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface OriginViewController : UIViewController
-
+- (void) setLabel1:(NSString *)str;
+- (NSString *) getLabel1;
 @end

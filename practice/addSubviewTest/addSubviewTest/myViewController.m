@@ -1,30 +1,28 @@
 //
-//  ViewControllerHndle.m
-//  MVCSample
+//  myViewController.m
+//  addSubviewTest
 //
 //  Created by Minami Kyohei on 2016/06/17.
 //  Copyright © 2016年 Minami Kyohei. All rights reserved.
 //
 
-#import "ViewControllerHndle.h"
+#import "myViewController.h"
 
-@interface ViewControllerHndle ()
+@interface myViewController ()
 
 @end
 
-@implementation ViewControllerHndle
+@implementation myViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-
 
 /*
 #pragma mark - Navigation
