@@ -10,14 +10,11 @@
 #import "ViewControllerHandle.h"
 
 @interface ViewController ()
-
-- (IBAction)view1:(id)sender;
-- (IBAction)view2:(id)sender;
-- (IBAction)view3:(id)sender;
 @property ViewControllerHndle *handle;
 @end
 
 @implementation ViewController
+@synthesize delegate;
 
 - (void)viewDidLoad {
     [super viewDidLoad];

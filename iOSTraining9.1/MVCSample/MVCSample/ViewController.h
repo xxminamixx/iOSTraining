@@ -8,17 +8,22 @@
 
 #import <UIKit/UIKit.h>
 
+//プロトコル定義
 @protocol pushButton <NSObject>
 
+//デリゲートメソッド定義
 @required
 - (void)View1Action;
 - (void)View2Action;
 - (void)View3Action;
-
 @end
 
 @interface ViewController : UIViewController
+
+//デリゲートインスタンス定義
 @property (weak, nonatomic) id<pushButton> delegate;
+
+//ボタンメソッド定義
 - (IBAction)view1:(id)sender;
 - (IBAction)view2:(id)sender;
 - (IBAction)view3:(id)sender;
