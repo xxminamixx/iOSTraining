@@ -10,7 +10,7 @@
 #import "ViewControllerHandle.h"
 #import "ViewController.h"
 
-@interface ViewControllerHndle () <pushButton>
+@interface ViewControllerHndle () 
 
 @end
 

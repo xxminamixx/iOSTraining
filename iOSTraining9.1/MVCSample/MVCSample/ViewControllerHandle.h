@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 #import "ViewController.h"
 
-@interface ViewControllerHndle : UIViewController
+@interface ViewControllerHndle : UIViewController<pushButton>
 @end
