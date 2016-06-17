@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#include "OriginViewController.h"
 
-@interface CustomViewController : UIViewController
+@interface CustomViewController : OriginViewController
 
 @end

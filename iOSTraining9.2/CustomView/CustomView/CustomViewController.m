@@ -7,8 +7,11 @@
 //
 
 #import "CustomViewController.h"
+#import "OriginViewController.h"
 
 @interface CustomViewController ()
+- (IBAction)action1:(id)sender;
+- (IBAction)action2:(id)sender;
 
 @end
 
@@ -34,4 +37,11 @@
 }
 */
 
+- (IBAction)action1:(id)sender {
+    OriginViewController *oView = [CustomViewController new];
+    [oView setLabel1:@"日本"];
+}
+
+- (IBAction)action2:(id)sender {
+}
 @end
