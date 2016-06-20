@@ -6,12 +6,11 @@
 //  Copyright © 2016年 Minami Kyohei. All rights reserved.
 //
 
-
 #import "ViewControllerHandle.h"
 #import "ViewController.h"
 
-@interface ViewControllerHndle () 
-
+@interface ViewControllerHndle ()
+@property (weak, nonatomic) IBOutlet UILabel *label2;
 @end
 
 @implementation ViewControllerHndle
@@ -19,32 +18,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //通知もとのインスタンスのデリゲートに自身をセット
-    ViewController *view = [ViewController new];
-    view.delegate = self;
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *load = [defaults stringForKey:@"memory"];
+    _label2.text = load;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-
-#pragma mark - ViewController delegate method
-- (void)View1Action
-{
-
-}
-
-- (void)View2Action
-{
-    
-}
-
-
-- (void)View3Action
-{
-        
 }
 
 

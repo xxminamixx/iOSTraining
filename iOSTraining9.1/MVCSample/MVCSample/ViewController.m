@@ -10,24 +10,38 @@
 #import "ViewControllerHandle.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *textField;
 @property (weak, nonatomic) IBOutlet UILabel *label1;
-@property ViewControllerHndle *handle;
 @end
 
 @implementation ViewController
-@synthesize delegate;
 
-- (id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (void)setStr:(NSString *)text
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
+    self.label1_copy = text;
+}
+
+- (NSString *)getStr
+{
+    return self.label1_copy;
+}
+
+// javaのコンストラクタのようなもの
+- (id) init
+{
+    NSLog(@"初期化します");
+    _label1_copy = @"Hello";
     return self;
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSLog(@"このメソッドは画面遷移前に呼ばれます");
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _label1_copy = @"Hello";
+    _label1.text = _label1_copy;
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -37,38 +51,13 @@
 }
 
 - (IBAction)view1:(id)sender {
-    // ストーリーボードを指定する
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    //テキストフィールド記録
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *memory = _textField.text;
+    [defaults setObject:memory forKey:@"memory"];
     
-    // 遷移先のViewControllerをStoryBoardをもとに作成
-    ViewControllerHndle *handle = [storyboard instantiateViewControllerWithIdentifier:@"View1"];
-    
-    // 画面をPUSHで遷移させる
-    [self.navigationController pushViewController:handle animated:YES];
-    
+    //segueのIDで遷移
+    [self performSegueWithIdentifier:@"view1Segue" sender:self];
 }
 
-- (IBAction)view2:(id)sender {
-    // ストーリーボードを指定する
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    
-    // 遷移先のViewControllerをStoryBoardをもとに作成
-    ViewControllerHndle *handle = [storyboard instantiateViewControllerWithIdentifier:@"View2"];
-    
-    // 画面をPUSHで遷移させる
-    [self.navigationController pushViewController:handle animated:YES];
-   }
-
-- (IBAction)view3:(id)sender {
-    
-    // ストーリーボードを指定する
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    
-    // 遷移先のViewControllerをStoryBoardをもとに作成
-    ViewControllerHndle *handle = [storyboard instantiateViewControllerWithIdentifier:@"View3"];
-    
-    // 画面をPUSHで遷移させる
-    [self.navigationController pushViewController:handle animated:YES];
-
-  }
 @end
