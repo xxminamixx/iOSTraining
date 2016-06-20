@@ -21,10 +21,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //通知もとのインスタンスのデリゲートに自身をセット
-    ViewController *view = [ViewController new];
-    view.delegate = self;
-    _label2.text = view.getStr;
+    //通知もとのインスタンスのデリゲートに自身をセッ
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *load = [defaults stringForKey:@"memory"];
+    _label2.text = load;
+    
 
 
 

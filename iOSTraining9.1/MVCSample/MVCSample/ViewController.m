@@ -10,6 +10,7 @@
 #import "ViewControllerHandle.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *textField;
 @property (weak, nonatomic) IBOutlet UILabel *label1;
 @end
 
@@ -50,8 +51,12 @@
 }
 
 - (IBAction)view1:(id)sender {
+    //テキストフィールド記録
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *memory = _textField.text;
+    [defaults setObject:memory forKey:@"memory"];
+    
     [self performSegueWithIdentifier:@"view1Segue" sender:self];
-    [self.delegate View1Action];
 }
 
 @end
