@@ -11,19 +11,22 @@
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *label1;
-@property ViewControllerHndle *handle;
 @end
 
 @implementation ViewController
-@synthesize delegate;
 
-- (id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (void)setStr:(NSString *)text
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
+    self.label1_copy = text;
+}
+
+- (NSString *)getStr
+{
+    return self.label1_copy;
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    _label1_copy = _label1.text;
 }
 
 - (void)viewDidLoad {
@@ -37,16 +40,11 @@
 }
 
 - (IBAction)view1:(id)sender {
-    // ストーリーボードを指定する
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    
-    // 遷移先のViewControllerをStoryBoardをもとに作成
-    ViewControllerHndle *handle = [storyboard instantiateViewControllerWithIdentifier:@"View1"];
-    
-    // 画面をPUSHで遷移させる
-    [self.navigationController pushViewController:handle animated:YES];
-    
+    [self performSegueWithIdentifier:@"view1Segue" sender:self];
+    [self.delegate View1Action];
 }
+
+
 
 - (IBAction)view2:(id)sender {
     // ストーリーボードを指定する

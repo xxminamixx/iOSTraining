@@ -10,4 +10,7 @@
 #import "ViewController.h"
 
 @interface ViewControllerHndle : UIViewController<pushButton>
+
+@property NSString *str;
+
 @end

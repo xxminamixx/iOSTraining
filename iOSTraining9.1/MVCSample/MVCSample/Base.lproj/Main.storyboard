@@ -55,20 +55,30 @@
                                     <action selector="view1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Str-ZZ-2TC"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ees-zQ-VP1">
+                                <rect key="frame" x="170" y="79" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="DoS-Cd-Lh9"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="label1" destination="Ees-zQ-VP1" id="cpV-M3-Hab"/>
+                        <segue destination="aiL-BX-4Z6" kind="push" identifier="view1Segue" id="Rxr-Qs-cRO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="109.5" y="433.5"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Hndle-->
         <scene sceneID="ICo-0X-4eV">
             <objects>
-                <viewController storyboardIdentifier="View1" id="aiL-BX-4Z6" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="View1" id="aiL-BX-4Z6" customClass="ViewControllerHndle" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VNZ-t9-kaP"/>
                         <viewControllerLayoutGuide type="bottom" id="5eb-gi-bJe"/>
@@ -78,7 +88,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="View1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FeD-YR-50a">
-                                <rect key="frame" x="165" y="323" width="45" height="21"/>
+                                <rect key="frame" x="165" y="323" width="117" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -86,7 +96,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Evp-U6-Xta"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="label2" destination="FeD-YR-50a" id="gcv-og-EE9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FGO-1R-0Ac" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
