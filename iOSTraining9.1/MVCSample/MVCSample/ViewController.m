@@ -25,12 +25,22 @@
     return self.label1_copy;
 }
 
+// javaのコンストラクタのようなもの
+- (id) init
+{
+    NSLog(@"初期化します");
+    _label1_copy = @"Hello";
+    return self;
+}
+
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    _label1_copy = _label1.text;
+    NSLog(@"このメソッドは画面遷移前に呼ばれます");
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _label1_copy = @"Hello";
+    _label1.text = _label1_copy;
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -44,29 +54,4 @@
     [self.delegate View1Action];
 }
 
-
-
-- (IBAction)view2:(id)sender {
-    // ストーリーボードを指定する
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    
-    // 遷移先のViewControllerをStoryBoardをもとに作成
-    ViewControllerHndle *handle = [storyboard instantiateViewControllerWithIdentifier:@"View2"];
-    
-    // 画面をPUSHで遷移させる
-    [self.navigationController pushViewController:handle animated:YES];
-   }
-
-- (IBAction)view3:(id)sender {
-    
-    // ストーリーボードを指定する
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    
-    // 遷移先のViewControllerをStoryBoardをもとに作成
-    ViewControllerHndle *handle = [storyboard instantiateViewControllerWithIdentifier:@"View3"];
-    
-    // 画面をPUSHで遷移させる
-    [self.navigationController pushViewController:handle animated:YES];
-
-  }
 @end

@@ -34,20 +34,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDc-D3-ffd">
-                                <rect key="frame" x="166" y="165" width="42" height="30"/>
-                                <state key="normal" title="View2"/>
-                                <connections>
-                                    <action selector="view2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LH8-5Q-By8"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bx2-nJ-pGD">
-                                <rect key="frame" x="166" y="213" width="43" height="30"/>
-                                <state key="normal" title="View3"/>
-                                <connections>
-                                    <action selector="view3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cpV-5j-fzt"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Swi-Zo-v8a">
                                 <rect key="frame" x="167" y="113" width="40" height="30"/>
                                 <state key="normal" title="View1"/>
@@ -55,8 +41,8 @@
                                     <action selector="view1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Str-ZZ-2TC"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ees-zQ-VP1">
-                                <rect key="frame" x="170" y="79" width="39" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ees-zQ-VP1">
+                                <rect key="frame" x="172" y="79" width="37" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>

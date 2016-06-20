@@ -28,9 +28,6 @@
 
 //ボタンメソッド定義
 - (IBAction)view1:(id)sender;
-- (IBAction)view2:(id)sender;
-- (IBAction)view3:(id)sender;
-
 
 - (void)setStr:(NSString *)text;
 - (NSString *)getStr;

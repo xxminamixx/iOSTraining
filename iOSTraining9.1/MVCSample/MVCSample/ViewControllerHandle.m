@@ -36,22 +36,5 @@
 }
 
 
-#pragma mark - ViewController delegate method
-- (void)View1Action
-{
-   }
-
-- (void)View2Action
-{
-    
-}
-
-
-- (void)View3Action
-{
-        
-}
-
-
 @end
 
