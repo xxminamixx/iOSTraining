@@ -56,6 +56,7 @@
     NSString *memory = _textField.text;
     [defaults setObject:memory forKey:@"memory"];
     
+    //segueのIDで遷移
     [self performSegueWithIdentifier:@"view1Segue" sender:self];
 }
 
