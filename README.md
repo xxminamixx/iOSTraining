@@ -63,3 +63,14 @@ NSUserDefaultsやNSFileManagerを使ったデータの保存
 NSNotificationとNSNotificationCenterを用いた通知処理  
 Blocls構文の書き方  
 */  
+  
+# 6月17日(金)  
+9.設計とデザインパターン
+i. クラス設計1
+ii. クラス設計2
+iii. クラス設計演習
+/*  
+画面遷移先への値渡し  
+delegateを扱う。delegateの先のポインタを渡すことに苦戦。  
+ViewDidLoadなどの呼ばれるタイミングを考慮する必要あり。  
+*/  
